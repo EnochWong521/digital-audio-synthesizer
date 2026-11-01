@@ -1,0 +1,7 @@
+# Local history and backups
+.history/
+*-backups/
+
+# KiCad temporary files
+*.kicad_prl
+*.lck
