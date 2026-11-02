@@ -2275,6 +2275,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -2555,10 +2719,22 @@
 		(uuid "315773fd-c291-40c0-b169-438f1bcad323")
 	)
 	(junction
+		(at 106.68 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "491dead7-93b2-41db-a9fe-d41e796eb937")
+	)
+	(junction
 		(at 224.79 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50bab281-be89-413b-9425-97e19c6edf80")
+	)
+	(junction
+		(at 60.96 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dec13fa-2efa-44dc-a9e2-83e729a76159")
 	)
 	(junction
 		(at 245.11 54.61)
@@ -2577,6 +2753,42 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a16b5baf-3216-459a-bd59-7b2a79f2844b")
+	)
+	(junction
+		(at 67.31 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2391827-1939-425f-acb3-098b9331562c")
+	)
+	(junction
+		(at 49.53 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a294ba8b-65a5-4735-9878-1155b8a36417")
+	)
+	(junction
+		(at 83.82 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6094e22-7f7f-4746-ac88-9cfc7ee1e91c")
+	)
+	(junction
+		(at 72.39 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d02cd0aa-273d-4d55-a2d8-1e6394e44342")
+	)
+	(junction
+		(at 95.25 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4394fc4-c8ff-48c6-b16b-b5c31f9116eb")
+	)
+	(junction
+		(at 38.1 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e95992d3-0ae2-450e-aafc-b6c7864a0555")
 	)
 	(junction
 		(at 238.76 43.18)
@@ -2619,6 +2831,36 @@
 			(type default)
 		)
 		(uuid "0414ba7c-33c0-4f72-a0b2-d4d7d6153e0e")
+	)
+	(wire
+		(pts
+			(xy 119.38 85.09) (xy 133.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09b1e30e-efd0-4f99-9085-643b38ea1787")
+	)
+	(wire
+		(pts
+			(xy 119.38 87.63) (xy 133.35 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a046607-f73a-4341-a57e-570ad0eb5e83")
+	)
+	(wire
+		(pts
+			(xy 49.53 148.59) (xy 49.53 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b8481c4-cac1-43c8-bde0-58d54817f1af")
 	)
 	(wire
 		(pts
@@ -2672,6 +2914,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 80.01) (xy 133.35 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16e9de4d-6797-40e4-a9fe-ba90a704da7c")
+	)
+	(wire
+		(pts
 			(xy 234.95 62.23) (xy 238.76 62.23)
 		)
 		(stroke
@@ -2719,6 +2971,26 @@
 			(type default)
 		)
 		(uuid "2479bb81-cb90-4cba-a682-0b624325bd3e")
+	)
+	(wire
+		(pts
+			(xy 60.96 163.83) (xy 67.31 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f8197d-84c4-42e0-a646-b7bfeea73468")
+	)
+	(wire
+		(pts
+			(xy 95.25 163.83) (xy 106.68 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e424e8-d17c-47a7-b905-e9d3462ee170")
 	)
 	(wire
 		(pts
@@ -2772,6 +3044,36 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 163.83) (xy 72.39 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35a8b119-f9ea-442d-a1e2-72adbb1d7be8")
+	)
+	(wire
+		(pts
+			(xy 26.67 163.83) (xy 38.1 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3722f21c-b19e-4662-9722-3d8116f202ec")
+	)
+	(wire
+		(pts
+			(xy 119.38 97.79) (xy 133.35 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39644273-ec2a-421b-937d-15381d8be893")
+	)
+	(wire
+		(pts
 			(xy 179.07 85.09) (xy 182.88 85.09)
 		)
 		(stroke
@@ -2779,6 +3081,16 @@
 			(type default)
 		)
 		(uuid "3beaff83-9176-45ee-b97d-8da5fff7043c")
+	)
+	(wire
+		(pts
+			(xy 83.82 148.59) (xy 83.82 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dcd73ea-fa90-4007-a906-4ba2f52999e4")
 	)
 	(wire
 		(pts
@@ -2799,6 +3111,26 @@
 			(type default)
 		)
 		(uuid "435cf435-2f41-476f-8bd7-60efd73f70ce")
+	)
+	(wire
+		(pts
+			(xy 95.25 148.59) (xy 95.25 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47772688-c43b-4385-a0b6-a76452321b22")
+	)
+	(wire
+		(pts
+			(xy 106.68 163.83) (xy 118.11 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4da19bce-92b2-416d-990d-41c7424cd975")
 	)
 	(wire
 		(pts
@@ -2952,6 +3284,36 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 148.59) (xy 118.11 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83a0053a-665d-4b75-8d73-fb78a56e302f")
+	)
+	(wire
+		(pts
+			(xy 72.39 163.83) (xy 83.82 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908c4bd5-5b9b-44b7-93a5-5b2191273ed1")
+	)
+	(wire
+		(pts
+			(xy 119.38 77.47) (xy 133.35 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94f6b134-0b66-4d07-a9e0-26ad02c9604d")
+	)
+	(wire
+		(pts
 			(xy 40.64 27.94) (xy 40.64 30.48)
 		)
 		(stroke
@@ -2962,6 +3324,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 163.83) (xy 60.96 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eabe3a7-4bcc-41c9-9e81-b3b9edb0cd70")
+	)
+	(wire
+		(pts
 			(xy 40.64 38.1) (xy 49.53 38.1)
 		)
 		(stroke
@@ -2969,6 +3341,26 @@
 			(type default)
 		)
 		(uuid "a0a43288-9937-4e75-87ee-00e3601a71b6")
+	)
+	(wire
+		(pts
+			(xy 72.39 148.59) (xy 72.39 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad7bda04-1279-416a-8d85-5167701036ea")
+	)
+	(wire
+		(pts
+			(xy 38.1 163.83) (xy 49.53 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0451f91-0ca4-4075-ad6f-3324175f70e9")
 	)
 	(wire
 		(pts
@@ -2989,6 +3381,26 @@
 			(type default)
 		)
 		(uuid "b572b04e-b5ef-4196-866f-6a613c7a1ba4")
+	)
+	(wire
+		(pts
+			(xy 83.82 163.83) (xy 95.25 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5e28744-9310-4553-bd4e-ab7cc5077dd1")
+	)
+	(wire
+		(pts
+			(xy 38.1 148.59) (xy 38.1 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd2e8cac-85ee-422b-9199-d4b587ac2a14")
 	)
 	(wire
 		(pts
@@ -3022,6 +3434,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 148.59) (xy 26.67 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9c4e3f9-362e-49f1-8f0a-1f26590bb90e")
+	)
+	(wire
+		(pts
 			(xy 245.11 93.98) (xy 234.95 93.98)
 		)
 		(stroke
@@ -3042,6 +3464,46 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 82.55) (xy 133.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d03b3508-c936-4b85-ab2d-939b723b0f67")
+	)
+	(wire
+		(pts
+			(xy 60.96 148.59) (xy 60.96 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1abb507-81aa-47d6-8291-269e933adf98")
+	)
+	(wire
+		(pts
+			(xy 119.38 95.25) (xy 133.35 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2105165-1ac1-4b73-8b80-521ca22a24f2")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 133.35 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da42fad8-db5f-4b81-8237-1fecf722626d")
+	)
+	(wire
+		(pts
 			(xy 62.23 30.48) (xy 67.31 30.48)
 		)
 		(stroke
@@ -3049,6 +3511,16 @@
 			(type default)
 		)
 		(uuid "da4cc730-84c4-4a40-810b-d7314b575918")
+	)
+	(wire
+		(pts
+			(xy 119.38 90.17) (xy 133.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0dd93fd-ba45-423d-856d-dc8664506ee6")
 	)
 	(wire
 		(pts
@@ -3090,6 +3562,26 @@
 		)
 		(uuid "ee8a3869-f565-4dcb-b091-b651f51dfefc")
 	)
+	(wire
+		(pts
+			(xy 106.68 148.59) (xy 106.68 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa5ad837-7745-473b-871b-00a399e7ef27")
+	)
+	(label "KEY_E"
+		(at 119.38 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00060c6e-6ffd-46e3-9c58-9b583f143fe6")
+	)
 	(label "LCD_D7"
 		(at 182.88 85.09 0)
 		(effects
@@ -3130,6 +3622,36 @@
 		)
 		(uuid "237a5a35-326b-4d72-8ce5-5a90be3e5866")
 	)
+	(label "WAVE_SELECT"
+		(at 118.11 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "265aae64-4401-4f0f-986d-294d60fdb25b")
+	)
+	(label "KEY_D"
+		(at 119.38 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "276d9a2a-e5c6-4296-a3fd-daf0d288d6b7")
+	)
+	(label "KEY_B"
+		(at 95.25 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2953c9ae-5e18-4d57-a1b9-fd82bfb327f4")
+	)
 	(label "LCD_RS"
 		(at 182.88 72.39 0)
 		(effects
@@ -3149,6 +3671,26 @@
 			(justify left bottom)
 		)
 		(uuid "30b44d42-8eda-4b8f-9648-c433851894e6")
+	)
+	(label "KEY_F"
+		(at 60.96 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45536171-74a7-4d84-9359-6a54e7d54668")
+	)
+	(label "KEY_A"
+		(at 119.38 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b1e4442-d054-4e9b-9bd2-edaee56324d2")
 	)
 	(label "LCD_D6"
 		(at 182.88 82.55 0)
@@ -3170,7 +3712,17 @@
 		)
 		(uuid "53815181-1fb6-4abb-b0f0-158903cc96dc")
 	)
-	(label "Octave_ADC"
+	(label "KEY_G"
+		(at 119.38 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53fda612-b361-4569-a153-d228ef2281b3")
+	)
+	(label "OCTAVE_ADC"
 		(at 182.88 95.25 0)
 		(effects
 			(font
@@ -3179,6 +3731,16 @@
 			(justify left bottom)
 		)
 		(uuid "78b490d4-f075-4369-adcb-d8fe4b207e14")
+	)
+	(label "KEY_B"
+		(at 119.38 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "841dc916-98d4-42e0-8a5f-0132a6fe6259")
 	)
 	(label "V_sys"
 		(at 151.13 38.1 0)
@@ -3189,6 +3751,16 @@
 			(justify left bottom)
 		)
 		(uuid "88a59366-d331-4b13-947c-7b859ae2506b")
+	)
+	(label "KEY_G"
+		(at 72.39 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e59bf8e-b908-4bf7-9176-4032445da3d7")
 	)
 	(label "3V3"
 		(at 231.14 107.95 0)
@@ -3209,6 +3781,26 @@
 			(justify left bottom)
 		)
 		(uuid "9a9a624d-7a8c-4974-86bf-28b81247b107")
+	)
+	(label "WAVE_SELECT"
+		(at 119.38 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1cf6cd9-4ba1-498e-98d6-2b18ffc1d020")
+	)
+	(label "KEY_C"
+		(at 26.67 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa5878d5-242d-4eba-b862-b72920c53e0f")
 	)
 	(label "LCD_RS"
 		(at 204.47 59.69 0)
@@ -3250,6 +3842,16 @@
 		)
 		(uuid "c3d58c5f-5be9-4945-aad2-0b54d22ea620")
 	)
+	(label "KEY_C"
+		(at 119.38 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c60c78e4-da07-4f06-b852-e5d0f6781bd8")
+	)
 	(label "V_sys"
 		(at 67.31 30.48 0)
 		(effects
@@ -3260,7 +3862,7 @@
 		)
 		(uuid "d042f6ba-d404-4829-a4b0-4114d46c9208")
 	)
-	(label "Octave_ADC"
+	(label "OCTAVE_ADC"
 		(at 238.76 118.11 0)
 		(effects
 			(font
@@ -3269,6 +3871,16 @@
 			(justify left bottom)
 		)
 		(uuid "d2431bce-d1a3-4388-8a74-637984f39dbf")
+	)
+	(label "KEY_E"
+		(at 49.53 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d79a354b-d00d-4678-9ab8-f1490998469c")
 	)
 	(label "LCD_D4"
 		(at 204.47 77.47 0)
@@ -3279,6 +3891,56 @@
 			(justify left bottom)
 		)
 		(uuid "e08b8a5d-d8d6-49f2-b146-a106443b21c0")
+	)
+	(label "KEY_C_HIGH"
+		(at 106.68 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edb650d0-1f98-4eae-b14c-feffd23e2f09")
+	)
+	(label "KEY_F"
+		(at 119.38 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f265d86c-3d17-4761-8d33-fdcecdd00172")
+	)
+	(label "KEY_D"
+		(at 38.1 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5eae456-fdac-446a-8e22-891e3a3c546d")
+	)
+	(label "KEY_A"
+		(at 83.82 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8a1c7f2-16c8-4bb8-afad-5c308f985b9d")
+	)
+	(label "KEY_C_HIGH"
+		(at 119.38 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdd40068-ba6b-4583-a723-166d88e32f48")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3435,6 +4097,88 @@
 			(project "digital_audio_synthesizer"
 				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 49.53 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "242b3099-ae44-403e-9dc0-031e3a301b38")
+		(property "Reference" "SW3"
+			(at 50.8 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 50.8 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 44.45 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 49.53 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9aebac4-b2ea-4e95-8414-a0c518954d5c")
+		)
+		(pin "2"
+			(uuid "09e63065-1e6a-49f4-8210-08ed59c8b5c3")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -3631,6 +4375,170 @@
 			(project "digital_audio_synthesizer"
 				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 60.96 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c709ee0-88aa-49e7-bb48-2c91451a9b63")
+		(property "Reference" "SW4"
+			(at 62.23 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 62.23 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 55.88 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 60.96 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9aebac4-b2ea-4e95-8414-a0c518954d5c")
+		)
+		(pin "2"
+			(uuid "09e63065-1e6a-49f4-8210-08ed59c8b5c3")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 118.11 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f70f943-46c3-496d-8527-d6e81e1ae1ff")
+		(property "Reference" "SW9"
+			(at 119.38 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 119.38 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 113.03 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 118.11 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d487b32a-fb05-459d-ab96-d240c783a52b")
+		)
+		(pin "2"
+			(uuid "c391e262-cddd-4b39-9ea4-fd909d037b58")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW9")
 					(unit 1)
 				)
 			)
@@ -4246,6 +5154,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 26.67 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa30c3e7-c81e-48d3-8e5c-ff2c8d482064")
+		(property "Reference" "SW1"
+			(at 27.94 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 27.94 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 21.59 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 26.67 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9aebac4-b2ea-4e95-8414-a0c518954d5c")
+		)
+		(pin "2"
+			(uuid "09e63065-1e6a-49f4-8210-08ed59c8b5c3")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 58.42 30.48 180)
 		(unit 1)
@@ -4522,6 +5512,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 38.1 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c73ab1c4-50d0-46ad-a4d0-af49d68ab010")
+		(property "Reference" "SW2"
+			(at 39.37 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 39.37 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 33.02 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 38.1 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9aebac4-b2ea-4e95-8414-a0c518954d5c")
+		)
+		(pin "2"
+			(uuid "09e63065-1e6a-49f4-8210-08ed59c8b5c3")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 40.64 27.94 0)
 		(unit 1)
@@ -4594,6 +5666,248 @@
 			(project "digital_audio_synthesizer"
 				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 72.39 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb70f5e7-6e0a-4d61-b8ef-6dfbc0a10ee6")
+		(property "Reference" "SW5"
+			(at 73.66 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 73.66 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 67.31 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 72.39 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1069e8ed-f6ce-44dc-b404-273d49a9f33d")
+		)
+		(pin "2"
+			(uuid "99b23435-366a-4094-a275-09ea52c0b839")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 106.68 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc5b7b01-23a9-4d8b-94d2-8086ce9cb85a")
+		(property "Reference" "SW8"
+			(at 107.95 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 107.95 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 101.6 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 106.68 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e6feb6c-33cd-4ee1-b827-a90a41ae837c")
+		)
+		(pin "2"
+			(uuid "e2924235-740d-489b-ab80-831b86a99213")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d792adf8-92d2-4970-9a20-e48f602f8078")
+		(property "Reference" "#PWR06"
+			(at 67.31 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e9706ed-7587-4885-983e-b812251d61de")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4676,6 +5990,170 @@
 			(project "digital_audio_synthesizer"
 				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 95.25 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3b1fc68-c1b6-4f29-9995-c91e058a3ae0")
+		(property "Reference" "SW7"
+			(at 96.52 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 96.52 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 90.17 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 95.25 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da0c6e85-1087-4106-b9d0-7ef6f19bd47d")
+		)
+		(pin "2"
+			(uuid "8c26028b-6efe-4486-b61d-56c72cfb7e70")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 83.82 158.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8983090-719a-4374-aa63-512bf8364527")
+		(property "Reference" "SW6"
+			(at 85.09 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 85.09 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 78.74 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 83.82 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "522c9b1a-218f-4e25-84ec-e0aae4bd88ca")
+		)
+		(pin "2"
+			(uuid "2312dc4b-2ec1-4f39-8611-f9988763858e")
+		)
+		(instances
+			(project "digital_audio_synthesizer"
+				(path "/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
+					(reference "SW6")
 					(unit 1)
 				)
 			)
