@@ -1,7 +1,30 @@
-# Local history and backups
-.history/
-*-backups/
 
-# KiCad temporary files
+# ==========================
+# Pico 2 C/C++ firmware
+# ==========================
+
+# CMake build outputs
+firmware/build/
+firmware/build-*/
+
+# VS Code local configuration
+firmware/.vscode/
+
+# Local Pico SDK files, if generated
+firmware/.pico-sdk/
+
+# Generated firmware binaries
+*.uf2
+*.elf
+*.bin
+*.hex
+*.map
+
+# ==========================
+# KiCad
+# ==========================
+
 *.kicad_prl
 *.lck
+.history/
+*-backups/
