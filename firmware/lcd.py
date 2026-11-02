@@ -101,7 +101,7 @@ def lcd_write_line(row, text):
 # Main program
 # -------------------------
 
-lcd_init()
-
-lcd_write_line(0, "Electronic Synth")
-lcd_write_line(1, "LCD Test OK")
+if __name__ == "__main__":
+    lcd_init()
+    lcd_write_line(0, "Electronic Synth")
+    lcd_write_line(1, "LCD Test OK")
