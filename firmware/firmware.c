@@ -30,6 +30,8 @@
 #define LCD_D6       21
 #define LCD_D7       22
 
+#define NOTE_LED_PIN 13
+
 static const uint NOTE_PINS[8] = {
     4, 5, 6, 7, 8, 9, 10, 11
 };
@@ -327,6 +329,9 @@ static void controls_core(void) {
             atomic_store(&audio_waveform, waveform);
             atomic_store(&audio_active, note >= 0);
 
+            // Digital output: LED ON when a note is pressed
+            gpio_put(NOTE_LED_PIN, note >= 0);
+
             char line1[17];
             char line2[17];
 
@@ -378,6 +383,10 @@ int main(void) {
     gpio_put(23, 1);
     
     init_dac();
+
+    gpio_init(NOTE_LED_PIN);
+    gpio_set_dir(NOTE_LED_PIN, GPIO_OUT);
+    gpio_put(NOTE_LED_PIN, 0);
 
     multicore_launch_core1(controls_core);
 

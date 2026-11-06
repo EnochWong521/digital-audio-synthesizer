@@ -28,7 +28,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1562100|1181100|a7eb5694-05c0-42cc-917a-4ae09c742eb2|e4c40169-9e25-4a62-9189-77c1d12a860f|/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e|/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e|/d2a47c6f-109e-44d4-9b6c-7bf672f0db9e",
+        "Pico AGND and GND connection is valid"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -429,7 +434,7 @@
         "uuid": "d2a47c6f-109e-44d4-9b6c-7bf672f0db9e"
       }
     ],
-    "used_designators": "DS1-2,U1,A1-2,D1-2,#PWR1-6,C1-3,R1-3,RV1-2,SW1-9",
+    "used_designators": "DS1-2,U1-3,A1-2,D1-2,#PWR1-9,C1-15,#FLG1-3,R1-8,RV1-2,SW1-9,J1-2",
     "variants": []
   },
   "sheets": [
