@@ -369,17 +369,25 @@ static void controls_core(void) {
 // CORE 0: AUDIO GENERATION
 // ========================================
 
+
 int main(void) {
+    // Force Pico 2 regulator into PWM mode
+    // to reduce 3.3V supply ripple
+    gpio_init(23);
+    gpio_set_dir(23, GPIO_OUT);
+    gpio_put(23, 1);
+    
     init_dac();
 
-    // Start controls on the second core
     multicore_launch_core1(controls_core);
 
     uint32_t phase = 0;
     uint32_t next_sample = time_us_32();
 
+    bool was_playing = false;
+
     while (true) {
-        // Maintain 50 kHz sample rate
+        // Maintain the 50 kHz timing schedule
         while ((int32_t)(
             time_us_32() - next_sample
         ) < 0) {
@@ -388,35 +396,50 @@ int main(void) {
 
         next_sample += SAMPLE_US;
 
-        uint16_t sample = 512;
-
         bool active = atomic_load(&audio_active);
         uint32_t step = atomic_load(&audio_step);
-        uint32_t waveform = atomic_load(&audio_waveform);
 
-        if (active && step != 0) {
-            if (waveform == SINE) {
-                uint8_t index = phase >> 24;
-                sample = sine_table[index];
+        // No note pressed: stop updating the DAC
+        if (!active || step == 0) {
 
-            } else if (waveform == SQUARE) {
-                sample = (phase < 0x80000000u)
-                         ? 1023 : 0;
+            if (was_playing) {
+                // Return output to midscale once
+                write_dac(512);
 
-            } else {
-                uint16_t ramp = phase >> 22;
-
-                if (ramp < 512) {
-                    sample = ramp * 2;
-                } else {
-                    sample = (1023 - ramp) * 2;
-                }
+                phase = 0;
+                was_playing = false;
             }
 
-            phase += step;
+            continue;
         }
 
-        // Hold midscale when no key is pressed
+        was_playing = true;
+
+        uint32_t waveform =
+            atomic_load(&audio_waveform);
+
+        uint16_t sample;
+
+        if (waveform == SINE) {
+            uint8_t index = phase >> 24;
+            sample = sine_table[index];
+
+        } else if (waveform == SQUARE) {
+            sample = (phase < 0x80000000u)
+                     ? 1023 : 0;
+
+        } else {
+            uint16_t ramp = phase >> 22;
+
+            if (ramp < 512) {
+                sample = ramp * 2;
+            } else {
+                sample = (1023 - ramp) * 2;
+            }
+        }
+
         write_dac(sample);
+        phase += step;
     }
 }
+
